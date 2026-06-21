@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paulo Hub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111827;
+      color: #f9fafb;
+    }
+
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      background: #020617;
+      border-bottom: 1px solid #334155;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: #cbd5e1;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 35px;
+    }
+
+    h2 {
+      border-bottom: 1px solid #334155;
+      padding-bottom: 8px;
+      color: #93c5fd;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 15px;
+    }
+
+    a.card {
+      display: block;
+      padding: 18px;
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 14px;
+      text-decoration: none;
+      color: #f9fafb;
+      transition: 0.2s;
+    }
+
+    a.card:hover {
+      background: #334155;
+      transform: translateY(-2px);
+    }
+
+    .icon {
+      font-size: 1.8rem;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    strong {
+      display: block;
+      font-size: 1.05rem;
+    }
+
+    small {
+      color: #cbd5e1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #94a3b8;
+      border-top: 1px solid #334155;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Paulo Hub</h1>
+  <p>Homepage pessoal para links úteis, notícias, trânsito, serviços locais e projetos.</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>🚨 Emergência e Saúde</h2>
+    <div class="grid">
+      <a class="card" href="https://www.nhs.uk/nhs-services/urgent-and-emergency-care-services/when-to-use-111/" target="_blank">
+        <span class="icon">🏥</span>
+        <strong>NHS 111</strong>
+        <small>Ajuda médica não urgente</small>
+      </a>
+
+      <a class="card" href="https://www.nhs.uk/" target="_blank">
+        <span class="icon">💊</span>
+        <strong>NHS</strong>
+        <small>Informação de saúde</small>
+      </a>
+
+      <a class="card" href="https://www.cambs.police.uk/" target="_blank">
+        <span class="icon">👮</span>
+        <strong>Cambridgeshire Police</strong>
+        <small>Polícia local</small>
+      </a>
+
+      <a class="card" href="https://www.cambsfire.gov.uk/" target="_blank">
+        <span class="icon">🚒</span>
+        <strong>Fire & Rescue</strong>
+        <small>Bombeiros Cambridgeshire</small>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <h2>🏠 Local</h2>
+    <div class="grid">
+      <a class="card" href="https://www.peterborough.gov.uk/" target="_blank">
+        <span class="icon">🏛️</span>
+        <strong>Peterborough Council</strong>
+        <small>Serviços locais</small>
+      </a>
+
+      <a class="card" href="https://www.bbc.co.uk/weather/2640358" target="_blank">
+        <span class="icon">🌦️</span>
+        <strong>Tempo Peterborough</strong>
+        <small>BBC Weather</small>
+      </a>
+
+      <a class="card" href="https://www.google.com/maps" target="_blank">
+        <span class="icon">🗺️</span>
+        <strong>Google Maps</strong>
+        <small>Mapas e rotas</small>
+      </a>
+
+      <a class="card" href="https://www.theaa.com/route-planner/traffic-news" target="_blank">
+        <span class="icon">🚗</span>
+        <strong>Trânsito</strong>
+        <small>AA Traffic News</small>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <h2>📰 Notícias</h2>
+    <div class="grid">
+      <a class="card" href="https://www.bbc.co.uk/news" target="_blank">
+        <span class="icon">📰</span>
+        <strong>BBC News</strong>
+        <small>Notícias Reino Unido e mundo</small>
+      </a>
+
+      <a class="card" href="https://news.sky.com/" target="_blank">
+        <span class="icon">📺</span>
+        <strong>Sky News</strong>
+        <small>Notícias ao vivo</small>
+      </a>
+
+      <a class="card" href="https://www.theguardian.com/uk" target="_blank">
+        <span class="icon">📖</span>
+        <strong>The Guardian</strong>
+        <small>Notícias UK</small>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <h2>🤖 IA e Ferramentas</h2>
+    <div class="grid">
+      <a class="card" href="https://chatgpt.com/" target="_blank">
+        <span class="icon">🤖</span>
+        <strong>ChatGPT</strong>
+        <small>Assistente IA</small>
+      </a>
+
+      <a class="card" href="https://gemini.google.com/" target="_blank">
+        <span class="icon">✨</span>
+        <strong>Gemini</strong>
+        <small>IA Google</small>
+      </a>
+
+      <a class="card" href="https://github.com/" target="_blank">
+        <span class="icon">💻</span>
+        <strong>GitHub</strong>
+        <small>Repositórios</small>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <h2>📚 Projetos</h2>
+    <div class="grid">
+      <a class="card" href="https://pajogusi.github.io/repositorio-solicitadoria/" target="_blank">
+        <span class="icon">⚖️</span>
+        <strong>Repositório de Solicitadoria</strong>
+        <small>Projeto jurídico</small>
+      </a>
+
+      <a class="card" href="https://pajogusi.github.io/ai-encyclopedia/" target="_blank">
+        <span class="icon">🧠</span>
+        <strong>AI Encyclopedia</strong>
+        <small>Ferramentas IA</small>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <h2>🚗 Carro e Serviços</h2>
+    <div class="grid">
+      <a class="card" href="https://www.gov.uk/check-mot-status" target="_blank">
+        <span class="icon">🔧</span>
+        <strong>Check MOT</strong>
+        <small>Ver estado do MOT</small>
+      </a>
+
+      <a class="card" href="https://www.gov.uk/vehicle-tax" target="_blank">
+        <span class="icon">💷</span>
+        <strong>Vehicle Tax</strong>
+        <small>Taxa do carro</small>
+      </a>
+
+      <a class="card" href="#" target="_blank">
+        <span class="icon">🛠️</span>
+        <strong>Oficina</strong>
+        <small>Adicionar contacto depois</small>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Paulo Hub — página pessoal de links úteis
+</footer>
+
+</body>
+</html>
