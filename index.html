@@ -88,7 +88,41 @@
       color: #94a3b8;
       border-top: 1px solid #334155;
     }
-  </style>
+  
+/* Secções expansíveis */
+details.secao {
+  margin: 14px 0;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+details.secao summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.08rem;
+  list-style: none;
+}
+
+details.secao summary::-webkit-details-marker {
+  display: none;
+}
+
+details.secao summary::after {
+  content: "  ▾";
+  float: right;
+}
+
+details.secao[open] summary::after {
+  content: "  ▴";
+}
+
+details.secao > *:not(summary) {
+  margin-top: 12px;
+}
+
+</style>
 </head>
 <body>
 
@@ -99,9 +133,10 @@
 
 <main>
 
-  <section>
-    <h2>⚡ Acesso Rápido</h2>
-    <div class="grid">
+  <details class="secao">
+  <summary>⚡ Acesso Rápido</summary>
+
+  <div class="grid">
       <a class="card" href="https://www.nhs.uk/medicines/" target="_blank">
         <span class="icon">💊</span>
         <strong>NHS Medicines A-Z</strong>
@@ -126,12 +161,13 @@
         <small>Assistente IA</small>
       </a>
     </div>
-  </section>
+</details>
 
 
-  <section>
-    <h2>🚨 Emergência e Saúde</h2>
-    <div class="grid">
+  <details class="secao">
+  <summary>🚨 Emergência e Saúde</summary>
+
+  <div class="grid">
       <a class="card" href="https://www.nhs.uk/nhs-services/urgent-and-emergency-care-services/when-to-use-111/" target="_blank">
         <span class="icon">🏥</span>
         <strong>NHS 111</strong>
@@ -156,11 +192,12 @@
         <small>Bombeiros Cambridgeshire</small>
       </a>
     </div>
-  </section>
+</details>
 
-  <section>
-    <h2>🏠 Local</h2>
-    <div class="grid">
+  <details class="secao">
+  <summary>🏠 Local</summary>
+
+  <div class="grid">
       <a class="card" href="https://www.peterborough.gov.uk/" target="_blank">
         <span class="icon">🏛️</span>
         <strong>Peterborough Council</strong>
@@ -185,12 +222,13 @@
         <small>AA Traffic News</small>
       </a>
     </div>
-  </section>
+</details>
 
 
-  <section>
-    <h2>💊 Medicamentos e Saúde</h2>
-    <div class="grid">
+  <details class="secao">
+  <summary>💊 Medicamentos e Saúde</summary>
+
+  <div class="grid">
       <a class="card" href="https://www.nhs.uk/medicines/" target="_blank">
         <span class="icon">💊</span>
         <strong>NHS Medicines A-Z</strong>
@@ -215,11 +253,12 @@
         <small>Condições, sintomas e tratamentos</small>
       </a>
     </div>
-  </section>
+</details>
 
-  <section>
-    <h2>📰 Notícias</h2>
-    <div class="grid">
+  <details class="secao">
+  <summary>📰 Notícias</summary>
+
+  <div class="grid">
       <a class="card" href="https://www.bbc.co.uk/news" target="_blank">
         <span class="icon">📰</span>
         <strong>BBC News</strong>
@@ -238,11 +277,12 @@
         <small>Notícias UK</small>
       </a>
     </div>
-  </section>
+</details>
 
-  <section>
-    <h2>🤖 IA e Ferramentas</h2>
-    <div class="grid">
+  <details class="secao">
+  <summary>🤖 IA e Ferramentas</summary>
+
+  <div class="grid">
       <a class="card" href="https://chatgpt.com/" target="_blank">
         <span class="icon">🤖</span>
         <strong>ChatGPT</strong>
@@ -261,11 +301,12 @@
         <small>Repositórios</small>
       </a>
     </div>
-  </section>
+</details>
 
-  <section>
-    <h2>📚 Projetos</h2>
-    <div class="grid">
+  <details class="secao">
+  <summary>📚 Projetos</summary>
+
+  <div class="grid">
       <a class="card" href="https://pajogusi.github.io/repositorio-solicitadoria/" target="_blank">
         <span class="icon">⚖️</span>
         <strong>Repositório de Solicitadoria</strong>
@@ -278,11 +319,12 @@
         <small>Ferramentas IA</small>
       </a>
     </div>
-  </section>
+</details>
 
-  <section>
-    <h2>🚗 Carro e Serviços</h2>
-    <div class="grid">
+  <details class="secao">
+  <summary>🚗 Carro e Serviços</summary>
+
+  <div class="grid">
       <a class="card" href="https://www.gov.uk/check-mot-status" target="_blank">
         <span class="icon">🔧</span>
         <strong>Check MOT</strong>
@@ -301,7 +343,7 @@
         <small>Adicionar contacto depois</small>
       </a>
     </div>
-  </section>
+</details>
 
 </main>
 
